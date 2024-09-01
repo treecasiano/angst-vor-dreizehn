@@ -1,0 +1,16 @@
+{
+  "name": "angst-vor-dreizehn",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "description": "JS13k Game Submission Angst Vor Dreizehn",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build --no-source-maps --experimental-scope-hoisting --public-url ./"
+  },
+  "author": "Theresa (Tree)",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
