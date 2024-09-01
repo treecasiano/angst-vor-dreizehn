@@ -3,13 +3,20 @@
   "source": "src/index.html",
   "version": "1.0.0",
   "description": "JS13k Game Submission Angst Vor Dreizehn",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build --no-source-maps --experimental-scope-hoisting --public-url ./"
+    "build": "parcel build --no-source-maps --public-url ./",
+    "size": "bundlesize",
+    "zip": "zip -r submission.zip dist"
   },
   "author": "Theresa (Tree)",
   "license": "MIT",
+  "bundlesize": [
+    {
+      "path": "submission.zip",
+      "maxSize": "13 kB"
+    }
+  ],
   "devDependencies": {
     "parcel": "^2.12.0"
   }
