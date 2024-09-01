@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "JS13k Game Submission Angst Vor Dreizehn",
   "scripts": {
-    "dev": "parcel",
-    "build": "parcel build --no-source-maps --public-url ./",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps --public-url ./",
     "size": "bundlesize",
     "zip": "zip -r submission.zip dist"
   },
