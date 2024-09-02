@@ -1,5 +1,8 @@
 name: Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - main
 permissions:
   contents: write
 jobs:
@@ -12,4 +15,5 @@ jobs:
       - run: npm run build
       - uses: JamesIves/github-pages-deploy-action@4.6.3
         with:
+          branch: gh-pages
           folder: dist
